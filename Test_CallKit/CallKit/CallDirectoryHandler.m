@@ -63,14 +63,14 @@
 //    2.如果一个区号都不加，则标记无效，无法识别
 //    3.lables and phoneNumbers 必须一一对应，否则无法运行
 //    4.标记单和通讯录有相同号码，通讯录优先
+//    5.号码不能有+、-、空格
     
     CXCallDirectoryPhoneNumber phoneNumbers[] = { 8618601680499, 8618885555555 };
-    NSArray<NSString *> *labels = @[  @"Local ",@"Local business" ];
     NSUInteger count = (sizeof(phoneNumbers) / sizeof(CXCallDirectoryPhoneNumber));
 
-    for (NSUInteger i = 0; i < count; i += 1) {
+    for (NSUInteger i = 0; i < count; i ++) {
         CXCallDirectoryPhoneNumber phoneNumber = phoneNumbers[i];
-        NSString *label = labels[i];
+        NSString *label = @"骚扰电话";
         [context addIdentificationEntryWithNextSequentialPhoneNumber:phoneNumber label:label];
     }
 
