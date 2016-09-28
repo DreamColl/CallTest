@@ -69,3 +69,14 @@ function getElem() {
     }
 }
 arr.join(",86")
+
+//找到号码库中长度为13的号码，并升序排列
+var b = [];
+for (var i = 0; i < arr.length; i++) {
+    if (arr[i].toString().length == 13) {
+        b.push(arr[i]);
+        //console.info(arr[i]);
+    }
+}
+b.sort();
+b.join();
