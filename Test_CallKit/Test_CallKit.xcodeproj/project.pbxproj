@@ -15,6 +15,8 @@
 		38A27F611D95300C000EBEA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A27F5F1D95300C000EBEA8 /* LaunchScreen.storyboard */; };
 		38A27F701D953025000EBEA8 /* CallDirectoryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A27F6F1D953025000EBEA8 /* CallDirectoryHandler.m */; };
 		38A27F741D953025000EBEA8 /* CallKit.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 38A27F6C1D953025000EBEA8 /* CallKit.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		38BFE8991D9DFA4D005D07FF /* CallText.js in Resources */ = {isa = PBXBuildFile; fileRef = 38BFE8981D9DFA4D005D07FF /* CallText.js */; };
+		980DDCCDF39F2C39D6732B62 /* libPods-Test_CallKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C747368BC73EDD251427F388 /* libPods-Test_CallKit.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18EB52817CC10B5F63F4A84A /* Pods-Test_CallKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_CallKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test_CallKit/Pods-Test_CallKit.release.xcconfig"; sourceTree = "<group>"; };
 		38A27F4E1D95300C000EBEA8 /* Test_CallKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_CallKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A27F521D95300C000EBEA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38A27F541D95300C000EBEA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +59,9 @@
 		38A27F6E1D953025000EBEA8 /* CallDirectoryHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallDirectoryHandler.h; sourceTree = "<group>"; };
 		38A27F6F1D953025000EBEA8 /* CallDirectoryHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryHandler.m; sourceTree = "<group>"; };
 		38A27F711D953025000EBEA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38BFE8981D9DFA4D005D07FF /* CallText.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = CallText.js; sourceTree = "<group>"; };
+		7AB8EA79DC0B200EB763E64D /* Pods-Test_CallKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_CallKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test_CallKit/Pods-Test_CallKit.debug.xcconfig"; sourceTree = "<group>"; };
+		C747368BC73EDD251427F388 /* libPods-Test_CallKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Test_CallKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				980DDCCDF39F2C39D6732B62 /* libPods-Test_CallKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +89,8 @@
 				38A27F501D95300C000EBEA8 /* Test_CallKit */,
 				38A27F6D1D953025000EBEA8 /* CallKit */,
 				38A27F4F1D95300C000EBEA8 /* Products */,
+				9EC98819FE7547911C0A280A /* Pods */,
+				4AADC55843729CB3DC1B6A5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +110,7 @@
 				38A27F551D95300C000EBEA8 /* AppDelegate.m */,
 				38A27F571D95300C000EBEA8 /* ViewController.h */,
 				38A27F581D95300C000EBEA8 /* ViewController.m */,
+				38BFE8981D9DFA4D005D07FF /* CallText.js */,
 				38A27F5A1D95300C000EBEA8 /* Main.storyboard */,
 				38A27F5D1D95300C000EBEA8 /* Assets.xcassets */,
 				38A27F5F1D95300C000EBEA8 /* LaunchScreen.storyboard */,
@@ -128,6 +138,23 @@
 			path = CallKit;
 			sourceTree = "<group>";
 		};
+		4AADC55843729CB3DC1B6A5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C747368BC73EDD251427F388 /* libPods-Test_CallKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EC98819FE7547911C0A280A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AB8EA79DC0B200EB763E64D /* Pods-Test_CallKit.debug.xcconfig */,
+				18EB52817CC10B5F63F4A84A /* Pods-Test_CallKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +162,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38A27F651D95300C000EBEA8 /* Build configuration list for PBXNativeTarget "Test_CallKit" */;
 			buildPhases = (
+				535404D1C8FDE03A972AE6E3 /* [CP] Check Pods Manifest.lock */,
 				38A27F4A1D95300C000EBEA8 /* Sources */,
 				38A27F4B1D95300C000EBEA8 /* Frameworks */,
 				38A27F4C1D95300C000EBEA8 /* Resources */,
 				38A27F781D953025000EBEA8 /* Embed App Extensions */,
+				8213C99CAADB15EEDACFFF02 /* [CP] Embed Pods Frameworks */,
+				23A4C5ACEA6ABEC0812932DB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,6 +245,7 @@
 				38A27F611D95300C000EBEA8 /* LaunchScreen.storyboard in Resources */,
 				38A27F5E1D95300C000EBEA8 /* Assets.xcassets in Resources */,
 				38A27F5C1D95300C000EBEA8 /* Main.storyboard in Resources */,
+				38BFE8991D9DFA4D005D07FF /* CallText.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +257,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23A4C5ACEA6ABEC0812932DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test_CallKit/Pods-Test_CallKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		535404D1C8FDE03A972AE6E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8213C99CAADB15EEDACFFF02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Test_CallKit/Pods-Test_CallKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		38A27F4A1D95300C000EBEA8 /* Sources */ = {
@@ -368,6 +447,7 @@
 		};
 		38A27F661D95300C000EBEA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AB8EA79DC0B200EB763E64D /* Pods-Test_CallKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 73CGU4SVP2;
@@ -380,6 +460,7 @@
 		};
 		38A27F671D95300C000EBEA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18EB52817CC10B5F63F4A84A /* Pods-Test_CallKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 73CGU4SVP2;
@@ -435,6 +516,7 @@
 				38A27F671D95300C000EBEA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38A27F751D953025000EBEA8 /* Build configuration list for PBXNativeTarget "CallKit" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +525,7 @@
 				38A27F771D953025000EBEA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
